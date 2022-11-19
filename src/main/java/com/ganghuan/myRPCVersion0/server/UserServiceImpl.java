@@ -14,7 +14,7 @@ public class UserServiceImpl implements UserService {
         Random random = new Random();
         User user = User.builder().userName(UUID.randomUUID().toString())
                 .id(id)
-                .sex(random.nextBoolean()).build();
+                .sex(random.nextBoolean()).build();//lombok包下的@Builder注解，使得User对象能够链式赋值
         return user;
     }
 }
