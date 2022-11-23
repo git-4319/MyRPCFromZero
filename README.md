@@ -13,8 +13,15 @@
 - 每一版本前有一个背景知识，建议先掌握其相关概念再上手代码
 - 每一个版本都有着要解决的问题与此版本的最大痛点，带着问题去写代码，并且与上个版本的代码进行比较差异
 
-
-
+**技术博客**：
+ * BIO 与 NIO ：https://blog.csdn.net/weixin_43732955/article/details/116426372?ops_request_misc=&request_id=&biz_id=102&utm_term=NIO&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-116426372.nonecase&spm=1018.2226.3001.4187
+ * JDK动态代理：https://blog.csdn.net/jiankunking/article/details/52143504
+ * Java反射：https://blog.csdn.net/sinat_38259539/article/details/71799078
+ * Java Socket通信：https://blog.csdn.net/shirdrn/article/details/6254821
+ * 面经：1. https://blog.csdn.net/qfc8930858/article/details/90105680 
+   * 2. https://javaguide.cn/distributed-system/rpc/rpc-intro.html
+ 
+        
 ## RPC的概念
 
 #### 背景知识

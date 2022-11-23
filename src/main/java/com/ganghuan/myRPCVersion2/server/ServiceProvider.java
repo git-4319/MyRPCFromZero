@@ -23,7 +23,11 @@ public class ServiceProvider {
     }
 
     public void provideServiceInterface(Object service){
-        Class<?>[] interfaces = service.getClass().getInterfaces();
+        /**
+         * 返回由该对象表示的类或接口直接实现的接口。
+         * 如果此对象表示一个类，则返回值是一个数组，其中包含表示该类直接实现的所有接口的对象
+         */
+        Class<?>[] interfaces = service.getClass().getInterfaces();//getClass():返回此对象的运行时类
 
         for(Class clazz : interfaces){
             interfaceProvider.put(clazz.getName(),service);
