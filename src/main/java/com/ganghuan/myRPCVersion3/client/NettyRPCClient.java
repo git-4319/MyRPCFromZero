@@ -9,6 +9,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.util.AttributeKey;
 
 /**
+ * 具体实现类
  * 实现RPCClient接口
  */
 public class NettyRPCClient implements RPCClient {
@@ -23,9 +24,10 @@ public class NettyRPCClient implements RPCClient {
     // netty客户端初始化，重复使用
     static {
         eventLoopGroup = new NioEventLoopGroup();
-        bootstrap = new Bootstrap();
-        bootstrap.group(eventLoopGroup).channel(NioSocketChannel.class)
-                .handler(new NettyClientInitializer());
+        bootstrap = new Bootstrap();//客户端辅助启动类
+        bootstrap.group(eventLoopGroup)
+                .channel(NioSocketChannel.class)
+                .handler(new NettyClientInitializer());//通道初始化
     }
 
     /**

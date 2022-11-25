@@ -795,7 +795,7 @@ System.out.println("从服务端得到的blog为：" + blogById);
 ```java
 // 共性抽取出来
 public interface RPCClient {
-    RPCResponse sendRequest(RPCRequest response);
+    RPCResponse sendRequest(RPCRequest request);
 }
 // SimpleRPCClient实现这个接口，不同的网络方式有着不同的实现
 @AllArgsConstructor

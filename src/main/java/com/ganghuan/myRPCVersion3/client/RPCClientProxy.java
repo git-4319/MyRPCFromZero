@@ -9,6 +9,9 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+/**
+ * 动态代理Service类，封装不同的Service请求为Request对象，并且持有一个RPCClient对象，负责与服务端的通信
+ */
 @AllArgsConstructor
 public class RPCClientProxy implements InvocationHandler {
     private RPCClient client;
